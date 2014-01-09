@@ -41,7 +41,7 @@ public class MainActivity extends Activity {
 		 double mOrigAbv = Double.parseDouble(mOrigAbvText.getText().toString());
 		 double mDesiredAbv = Double.parseDouble(mDesiredAbvText.getText().toString());
 	
-		 calculations testcalc = new calculations();
+		 Calculations testcalc = new Calculations();
 		 double mLitres = testcalc.getLitresToAdd(mOrigVolume, mOrigAbv*10, mDesiredAbv*10);
 		 
 		 String mLitreResults = String.valueOf(mLitres);

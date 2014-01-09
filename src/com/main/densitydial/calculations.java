@@ -1,6 +1,6 @@
 package com.main.densitydial;
 
-public class calculations {
+public class Calculations {
 
 
 /*############################################ vdensity Dirty Array ###############################################################*/
