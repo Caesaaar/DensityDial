@@ -49,7 +49,10 @@ public class MainActivity extends Activity {
 		 
 	}
 	
-	
+	public void swipeView()
+	{
+		setContentView(R.layout.activity_litre_density_lookup);
+	}
 	
 	
 	

@@ -32,30 +32,35 @@ public final class R {
     }
     public static final class id {
         public static final int action_settings=0x7f0a0008;
-        public static final int button1=0x7f0a0003;
-        public static final int current_abv=0x7f0a0002;
-        public static final int current_volume=0x7f0a0000;
-        public static final int desired_abv=0x7f0a0001;
-        public static final int final_litres=0x7f0a0004;
-        public static final int pager=0x7f0a0005;
-        public static final int pager_title_strip=0x7f0a0006;
+        public static final int change_view=0x7f0a0006;
+        public static final int current_abv=0x7f0a0004;
+        public static final int current_volume=0x7f0a0002;
+        public static final int desired_abv=0x7f0a0003;
+        public static final int pager=0x7f0a0000;
+        public static final int pager_title_strip=0x7f0a0001;
         public static final int section_label=0x7f0a0007;
+        public static final int submit=0x7f0a0005;
     }
     public static final class layout {
         public static final int activity_display_results=0x7f030000;
-        public static final int activity_main=0x7f030001;
-        public static final int activity_main_pager=0x7f030002;
-        public static final int fragment_main_dummy=0x7f030003;
+        public static final int activity_litre_density_lookup=0x7f030001;
+        public static final int activity_main=0x7f030002;
+        public static final int activity_main_pager=0x7f030003;
+        public static final int fragment_litre_density_lookup_dummy=0x7f030004;
+        public static final int fragment_main_dummy=0x7f030005;
     }
     public static final class menu {
         public static final int display_results=0x7f090000;
-        public static final int main=0x7f090001;
-        public static final int main_activity2=0x7f090002;
+        public static final int litre_density_lookup=0x7f090001;
+        public static final int main=0x7f090002;
+        public static final int main_activity2=0x7f090003;
+        public static final int set_current_vol=0x7f090004;
     }
     public static final class string {
         public static final int action_settings=0x7f060001;
         public static final int app_name=0x7f060000;
         public static final int button_submit=0x7f06000d;
+        public static final int button_view_change=0x7f06000e;
         public static final int field_current_abv=0x7f060007;
         public static final int field_current_kgs=0x7f060008;
         public static final int field_current_vol=0x7f060006;
@@ -63,34 +68,32 @@ public final class R {
         public static final int field_desired_kgs=0x7f06000b;
         public static final int field_desired_vol=0x7f060009;
         public static final int field_litres=0x7f06000c;
-        public static final int hello_world=0x7f06000f;
-        public static final int pref_default_display_name=0x7f060015;
-        public static final int pref_description_social_recommendations=0x7f060013;
+        public static final int pref_default_display_name=0x7f060014;
+        public static final int pref_description_social_recommendations=0x7f060012;
         /**  Example settings for Data & Sync 
          */
-        public static final int pref_header_data_sync=0x7f060017;
+        public static final int pref_header_data_sync=0x7f060016;
         /**  Strings related to Settings 
  Example General settings 
          */
-        public static final int pref_header_general=0x7f060011;
+        public static final int pref_header_general=0x7f060010;
         /**  Example settings for Notifications 
          */
-        public static final int pref_header_notifications=0x7f06001a;
-        public static final int pref_ringtone_silent=0x7f06001d;
-        public static final int pref_title_add_friends_to_messages=0x7f060016;
-        public static final int pref_title_display_name=0x7f060014;
-        public static final int pref_title_new_message_notifications=0x7f06001b;
-        public static final int pref_title_ringtone=0x7f06001c;
-        public static final int pref_title_social_recommendations=0x7f060012;
-        public static final int pref_title_sync_frequency=0x7f060018;
-        public static final int pref_title_system_sync_settings=0x7f060019;
-        public static final int pref_title_vibrate=0x7f06001e;
-        public static final int title_activity_display_results=0x7f06000e;
-        public static final int title_activity_main_activity=0x7f060005;
-        public static final int title_activity_main_activity2=0x7f060004;
-        public static final int title_activity_settings=0x7f060010;
-        public static final int title_section2=0x7f060002;
-        public static final int title_section3=0x7f060003;
+        public static final int pref_header_notifications=0x7f060019;
+        public static final int pref_ringtone_silent=0x7f06001c;
+        public static final int pref_title_add_friends_to_messages=0x7f060015;
+        public static final int pref_title_display_name=0x7f060013;
+        public static final int pref_title_new_message_notifications=0x7f06001a;
+        public static final int pref_title_ringtone=0x7f06001b;
+        public static final int pref_title_social_recommendations=0x7f060011;
+        public static final int pref_title_sync_frequency=0x7f060017;
+        public static final int pref_title_system_sync_settings=0x7f060018;
+        public static final int pref_title_vibrate=0x7f06001d;
+        public static final int title_activity_display_results=0x7f060005;
+        public static final int title_activity_litre_density_lookup=0x7f060004;
+        public static final int title_activity_main_activity=0x7f060002;
+        public static final int title_activity_set_current_vol=0x7f060003;
+        public static final int title_activity_settings=0x7f06000f;
     }
     public static final class style {
         /** 

@@ -23,16 +23,28 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.main.densitydial.MainActivity2"
-            android:label="@string/title_activity_main_activity2" >
-        </activity>
-        <activity
             android:name="com.main.densitydial.SettingsActivity"
             android:label="@string/title_activity_settings" >
         </activity>
         <activity
             android:name="com.main.densitydial.DisplayResults"
             android:label="@string/title_activity_display_results"
+            android:parentActivityName="com.main.densitydial.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.main.densitydial.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.main.densitydial.SetCurrentVol"
+            android:label="@string/title_activity_set_current_vol"
+            android:parentActivityName="com.main.densitydial.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.main.densitydial.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.main.densitydial.LitreDensityLookup"
+            android:label="@string/title_activity_litre_density_lookup"
             android:parentActivityName="com.main.densitydial.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

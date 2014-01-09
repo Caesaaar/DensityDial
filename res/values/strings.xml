@@ -3,10 +3,13 @@
 
     <string name="app_name">DensityDial</string>
     <string name="action_settings">Settings</string>
-    <string name="title_section2">Section 2</string>
-    <string name="title_section3">Section 3</string>
-    <string name="title_activity_main_activity2">MainActivity2</string>
-    <string name="title_activity_main_activity">test functions</string>
+
+    <string name="title_activity_main_activity">Main Functions</string>
+    <string name="title_activity_set_current_vol">SetCurrentVol</string>    
+    <string name="title_activity_litre_density_lookup">LitreDensityLookup</string>
+    <string name="title_activity_display_results">DisplayResults</string>
+    
+    
     <string name="field_current_vol">Current Vol</string>
     <string name="field_current_abv">Current Abv</string>
     <string name="field_current_kgs">current Kgs</string>
@@ -14,8 +17,15 @@
     <string name="field_desired_abv">Desired Abv</string>
     <string name="field_desired_kgs">Desired Kgs</string>
     <string name="field_litres">Litres to add</string>
+   
+    
     <string name="button_submit">Submit</string>
-    <string name="title_activity_display_results">DisplayResults</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="button_view_change">Swipe View</string>
+        
+    
+ 
+    
+
+
 
 </resources>
