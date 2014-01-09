@@ -1,6 +1,8 @@
-package com.example.densitydial;
+package com.main.densitydial;
 
 import java.util.Locale;
+
+import com.example.densitydial.R;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
