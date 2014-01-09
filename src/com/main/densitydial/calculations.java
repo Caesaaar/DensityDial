@@ -96,5 +96,25 @@ public class calculations {
 		return mAddLiquid;
 	}
 
+	public double getLitresToAdd(double mOrigVolume, double mOrigAbv, double mDesiredAbv)
+	{
+		//Stage1 work out Lals
+		double mLals = mOrigVolume * mOrigAbv;
+		
+		//Stage2 work out final volume
+		double mFinalLitres = mLals/mDesiredAbv;
+		
+		//stage 3 figure out current Kgs
+		double mOrigDensity = vDensity[(int) mOrigAbv];//IMPORTANT BEWARE OF CASTING!!! MUST BE PASSED AS DOUBLE*1000
+		double mOrigKgs = mOrigDensity * mOrigVolume;
+		
+		//stage 4  figure out final kgs
+		double mFinalDensity = vDensity[(int) mDesiredAbv];//IMPORTANT BEWARE OF CASTING!!! MUST BE PASSED AS DOUBLE*1000
+		double mFinalKgs = mFinalDensity * mFinalLitres;
+		
+		//stage 5 return the final additional weight required
+		return (mFinalKgs - mOrigKgs);
+						
+	}
 	
 }//end class
