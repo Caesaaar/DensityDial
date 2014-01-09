@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.densitydial"
+    package="com.main.densitydial"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -29,6 +29,14 @@
         <activity
             android:name="com.main.densitydial.SettingsActivity"
             android:label="@string/title_activity_settings" >
+        </activity>
+        <activity
+            android:name="com.main.densitydial.DisplayResults"
+            android:label="@string/title_activity_display_results"
+            android:parentActivityName="com.main.densitydial.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.main.densitydial.MainActivity" />
         </activity>
     </application>
 

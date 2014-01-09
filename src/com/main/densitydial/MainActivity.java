@@ -1,15 +1,13 @@
 package com.main.densitydial;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.View;
 import android.widget.EditText;
-import android.widget.TextView;
-
-import com.example.densitydial.R;
-import com.main.densitydial.calculations;
 
 public class MainActivity extends Activity {
-
+	public final static String EXTRA_MESSAGE = "com.main.DensityDial.MESSAGE";
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -23,14 +21,16 @@ public class MainActivity extends Activity {
 		return true;
 	}
 
-	public void getLitres(){
-		//Intent intent = new Intent (this, DisplayResults.class)
-		//
-		 TextView mLitreResults = new TextView(this);
-		/* double mOrigVolume = 
-		 double mOrigAbv = 
-		 double mDesiredAbv = */
-	
+	public void getLitres(View view){
+		
+		
+//		 TextView mLitreResults = new TextView(this);  
+//		 mLitreResults.setTextSize(40);
+//		 mLitreResults.setText(message);
+//		 double mOrigVolume = 
+//		 double mOrigAbv = 
+//		 double mDesiredAbv = 
+		 Intent intent = new Intent (this, DisplayResults.class);
 		 EditText mOrigVolText = (EditText) findViewById(R.id.current_volume);
 		 EditText mOrigAbvText = (EditText) findViewById(R.id.current_abv);
 		 EditText mDesiredAbvText = (EditText) findViewById(R.id.desired_abv);
@@ -40,7 +40,12 @@ public class MainActivity extends Activity {
 		 double mOrigAbv = Double.parseDouble(mOrigAbvText.getText().toString());
 		 double mDesiredAbv = Double.parseDouble(mDesiredAbvText.getText().toString());
 	
-		 double mLitres = calculations.this.getLitresToAdd(mOrigVolume, mOrigAbv, mDesiredAbv);
+		 calculations testcalc = new calculations();
+		 double mLitres = testcalc.getLitresToAdd(mOrigVolume, mOrigAbv*10, mDesiredAbv*10);
+		 
+		 String mLitreResults = String.valueOf(mLitres);
+		 intent.putExtra(EXTRA_MESSAGE, mLitreResults);
+		 startActivity(intent);
 		 
 	}
 	

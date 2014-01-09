@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package com.example.densitydial;
+package com.main.densitydial;
 
 public final class R {
     public static final class array {
@@ -42,13 +42,15 @@ public final class R {
         public static final int section_label=0x7f0a0007;
     }
     public static final class layout {
-        public static final int activity_main=0x7f030000;
-        public static final int activity_main_pager=0x7f030001;
-        public static final int fragment_main_dummy=0x7f030002;
+        public static final int activity_display_results=0x7f030000;
+        public static final int activity_main=0x7f030001;
+        public static final int activity_main_pager=0x7f030002;
+        public static final int fragment_main_dummy=0x7f030003;
     }
     public static final class menu {
-        public static final int main=0x7f090000;
-        public static final int main_activity2=0x7f090001;
+        public static final int display_results=0x7f090000;
+        public static final int main=0x7f090001;
+        public static final int main_activity2=0x7f090002;
     }
     public static final class string {
         public static final int action_settings=0x7f060001;
@@ -61,30 +63,32 @@ public final class R {
         public static final int field_desired_kgs=0x7f06000b;
         public static final int field_desired_vol=0x7f060009;
         public static final int field_litres=0x7f06000c;
-        public static final int pref_default_display_name=0x7f060013;
-        public static final int pref_description_social_recommendations=0x7f060011;
+        public static final int hello_world=0x7f06000f;
+        public static final int pref_default_display_name=0x7f060015;
+        public static final int pref_description_social_recommendations=0x7f060013;
         /**  Example settings for Data & Sync 
          */
-        public static final int pref_header_data_sync=0x7f060015;
+        public static final int pref_header_data_sync=0x7f060017;
         /**  Strings related to Settings 
  Example General settings 
          */
-        public static final int pref_header_general=0x7f06000f;
+        public static final int pref_header_general=0x7f060011;
         /**  Example settings for Notifications 
          */
-        public static final int pref_header_notifications=0x7f060018;
-        public static final int pref_ringtone_silent=0x7f06001b;
-        public static final int pref_title_add_friends_to_messages=0x7f060014;
-        public static final int pref_title_display_name=0x7f060012;
-        public static final int pref_title_new_message_notifications=0x7f060019;
-        public static final int pref_title_ringtone=0x7f06001a;
-        public static final int pref_title_social_recommendations=0x7f060010;
-        public static final int pref_title_sync_frequency=0x7f060016;
-        public static final int pref_title_system_sync_settings=0x7f060017;
-        public static final int pref_title_vibrate=0x7f06001c;
+        public static final int pref_header_notifications=0x7f06001a;
+        public static final int pref_ringtone_silent=0x7f06001d;
+        public static final int pref_title_add_friends_to_messages=0x7f060016;
+        public static final int pref_title_display_name=0x7f060014;
+        public static final int pref_title_new_message_notifications=0x7f06001b;
+        public static final int pref_title_ringtone=0x7f06001c;
+        public static final int pref_title_social_recommendations=0x7f060012;
+        public static final int pref_title_sync_frequency=0x7f060018;
+        public static final int pref_title_system_sync_settings=0x7f060019;
+        public static final int pref_title_vibrate=0x7f06001e;
+        public static final int title_activity_display_results=0x7f06000e;
         public static final int title_activity_main_activity=0x7f060005;
         public static final int title_activity_main_activity2=0x7f060004;
-        public static final int title_activity_settings=0x7f06000e;
+        public static final int title_activity_settings=0x7f060010;
         public static final int title_section2=0x7f060002;
         public static final int title_section3=0x7f060003;
     }
