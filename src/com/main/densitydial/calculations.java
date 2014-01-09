@@ -4,7 +4,7 @@ public class calculations {
 
 
 /*############################################ vdensity Dirty Array ###############################################################*/
-	private double [] vdensity = (new double[] { 0.99823,0.99804,0.99785,0.99766,0.99748,0.99729,0.9971,0.99692,0.99673,0.99655,0.99636,0.99618,0.99599,0.99581,0.99562,
+	private double [] vDensity = (new double[] { 0.99823,0.99804,0.99785,0.99766,0.99748,0.99729,0.9971,0.99692,0.99673,0.99655,0.99636,0.99618,0.99599,0.99581,0.99562,
 				0.99544,0.99525,0.99507,0.99489,0.99471,0.99453,0.99435,0.99417,0.99399,0.99381,0.99363,0.99345,0.99327,0.9931,0.99292,
 				0.99275,0.99257,0.9924,0.99222,0.99205,0.99188,0.99171,0.99154,0.99137,0.9912,0.99103,0.99087,0.9907,0.99053,0.99037,
 				0.9902,0.99003,0.98987,0.98971,0.98954,0.98938,0.98922,0.98906,0.9889,0.98874,0.98859,0.98843,0.98827,0.98811,0.98796,
@@ -72,7 +72,29 @@ public class calculations {
 				0.79578,0.79547,0.79517,0.79487,0.79456,0.79426,0.79396,0.79365,0.79335,0.79305,0.79274,0.79243,0.79213,0.79182,0.79151,
 				0.7912,0.79089,0.79059,0.79028,0.78997,0.78966,0.78934,0} ); //end of vdensity array
 	/*############################################ end vdensity Dirty Array ###############################################################*/	
-
+    private double mStatic1 = 100.03;//static number 1 for second calculation  ?????
+    private double mStatic2 = 125.65;//static number 2 for second calculation  ?????
+    private double mAddLiquid;
+    
+    
+	public double getAbv(double mdensity)
+	{
+		return mdensity;
+	}
+	
+	public double getDensity (double mAbv)
+	{
+		double x = mAbv*100;
+		int y = (int) x;
+		return vDensity [y];
+	}
+	
+	
+	public double getHomeCalculation(double mOrigGravity, double mFinGravity)
+	{
+		mAddLiquid = ((mOrigGravity-mFinGravity))*((mStatic1*(mOrigGravity-mFinGravity))+mStatic2);
+		return mAddLiquid;
+	}
 
 	
 }//end class
