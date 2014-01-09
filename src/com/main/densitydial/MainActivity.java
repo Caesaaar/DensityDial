@@ -31,11 +31,12 @@ public class MainActivity extends Activity {
 //		 double mOrigAbv = 
 //		 double mDesiredAbv = 
 		 Intent intent = new Intent (this, DisplayResults.class);
+
 		 EditText mOrigVolText = (EditText) findViewById(R.id.current_volume);
 		 EditText mOrigAbvText = (EditText) findViewById(R.id.current_abv);
 		 EditText mDesiredAbvText = (EditText) findViewById(R.id.desired_abv);
 		 
-		 
+		 //########################Write NULL POINT EXCEPTION FOR THIS############
 		 double mOrigVolume = Double.parseDouble(mOrigVolText.getText().toString());
 		 double mOrigAbv = Double.parseDouble(mOrigAbvText.getText().toString());
 		 double mDesiredAbv = Double.parseDouble(mDesiredAbvText.getText().toString());
@@ -44,14 +45,18 @@ public class MainActivity extends Activity {
 		 double mLitres = testcalc.getLitresToAdd(mOrigVolume, mOrigAbv*10, mDesiredAbv*10);
 		 
 		 String mLitreResults = String.valueOf(mLitres);
+		 
 		 intent.putExtra(EXTRA_MESSAGE, mLitreResults);
 		 startActivity(intent);
 		 
 	}
 	
-	public void swipeView()
+	public void swipeView(View view)
 	{
-		setContentView(R.layout.activity_litre_density_lookup);
+		Intent intent = new Intent (this, LitreDensityLookup.class);
+		startActivity(intent);
+		//setContentView(R.layout.activity_litre_density_lookup);
+	
 	}
 	
 	
