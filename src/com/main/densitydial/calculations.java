@@ -89,7 +89,6 @@ public class calculations {
 		return vDensity [y];
 	}
 	
-	
 	public double getHomeCalculation(double mOrigGravity, double mFinGravity)
 	{
 		mAddLiquid = ((mOrigGravity-mFinGravity))*((mStatic1*(mOrigGravity-mFinGravity))+mStatic2);

@@ -1,10 +1,12 @@
 package com.main.densitydial;
-import com.example.densitydial.R;
-import com.example.densitydial.R.layout;
-import com.example.densitydial.R.menu;
-import android.os.Bundle;
 import android.app.Activity;
+import android.os.Bundle;
 import android.view.Menu;
+import android.widget.EditText;
+import android.widget.TextView;
+
+import com.example.densitydial.R;
+import com.main.densitydial.calculations;
 
 public class MainActivity extends Activity {
 
@@ -21,6 +23,35 @@ public class MainActivity extends Activity {
 		return true;
 	}
 
+	public void getLitres(){
+		//Intent intent = new Intent (this, DisplayResults.class)
+		//
+		 TextView mLitreResults = new TextView(this);
+		/* double mOrigVolume = 
+		 double mOrigAbv = 
+		 double mDesiredAbv = */
+	
+		 EditText mOrigVolText = (EditText) findViewById(R.id.current_volume);
+		 EditText mOrigAbvText = (EditText) findViewById(R.id.current_abv);
+		 EditText mDesiredAbvText = (EditText) findViewById(R.id.desired_abv);
+		 
+		 
+		 double mOrigVolume = Double.parseDouble(mOrigVolText.getText().toString());
+		 double mOrigAbv = Double.parseDouble(mOrigAbvText.getText().toString());
+		 double mDesiredAbv = Double.parseDouble(mDesiredAbvText.getText().toString());
+	
+		 double mLitres = calculations.this.getLitresToAdd(mOrigVolume, mOrigAbv, mDesiredAbv);
+		 
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
 
 
