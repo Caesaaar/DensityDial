@@ -4,15 +4,50 @@
     android:layout_height="match_parent"
     android:background="#999999" >
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_margin="16dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:text="This is Fragment B"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_below="@+id/desired_abv"
+            android:layout_marginTop="76dp"
+            android:text="@string/field_litres" />
+
+        <EditText
+            android:id="@+id/current_abv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_below="@+id/textView1"
+            android:ems="10"
+            android:hint="@string/field_current_abv"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/desired_abv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/current_abv"
+            android:layout_below="@+id/current_abv"
+            android:layout_marginTop="29dp"
+            android:ems="10"
+            android:hint="@string/field_desired_abv"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="16dp"
+            android:text="@string/title_fragment_enter_gravity"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff" />
 
 </RelativeLayout>

@@ -9,6 +9,9 @@
     <string name="title_activity_litre_density_lookup">LitreDensityLookup</string>
     <string name="title_activity_display_results">DisplayResults</string>
     
+    <string name="title_fragment_original_volume"> Please enter the Current Volume</string>
+    <string name="title_fragment_enter_gravity"> Please enter the Initial Gravity and Desired Gravity</string>
+    <string name="title_fragment_view_results"> add this many litres to the solution</string>
     
     <string name="field_current_vol">Current Vol</string>
     <string name="field_current_abv">Current Abv</string>

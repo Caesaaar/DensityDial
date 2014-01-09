@@ -3,15 +3,47 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" 
     android:background="#ffCC00">
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_margin="16dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:text="This is Fragment A"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+        
+        <requestFocus />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="16dp"
+            android:text="@string/title_fragment_original_volume"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/current_volume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_below="@+id/textView1"
+            android:ems="10"
+            android:hint="@string/field_current_vol" 
+            android:inputType="text"/>
+             
+             
+             <!-- 
+        <Button
+            android:id="@+id/original_volume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/submit"
+            android:layout_centerVertical="true"
+            android:text="@string/submit"
+        	android:onClick="SetOriginalVolume"/>
+        
+   
+            android:singleLine="true"
+            android:imeOptions="actionDone" 
+             -->
+            
+        
+         
 
 </RelativeLayout>
