@@ -76,6 +76,10 @@ public class Calculations {
     private double mStatic2 = 125.65;//static number 2 for second calculation  ?????
     private double mAddLiquid;
     
+    public double vOrigAbv = 0;
+    public double vOrigVol = 0;
+    public double vFinalAbv = 0;
+    
     
 	public double getAbv(double mdensity)
 	{
@@ -87,6 +91,21 @@ public class Calculations {
 		double x = mAbv*100;
 		int y = (int) x;
 		return vDensity [y];
+	}
+	
+	public void setOriginalAbv (double mOrigAbv)
+	{
+		vOrigAbv = mOrigAbv;
+	}
+	 
+	public void setOriginalVolume(double mOrigVol)
+	{
+		vOrigVol = mOrigVol;
+	}
+	
+	public void setFinalAbv (double mFinAbv)
+	{
+		vFinalAbv = mFinAbv;
 	}
 	
 	public double getHomeCalculation(double mOrigGravity, double mFinGravity)
